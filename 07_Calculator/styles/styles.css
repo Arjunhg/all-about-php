@@ -1,0 +1,134 @@
+/* Calculator Styles */
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 350px;
+}
+
+input[type="number"] {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+input[type="number"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+select {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+select option {
+    background: #764ba2;
+    color: white;
+    padding: 0.5rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(238, 90, 36, 0.4);
+    margin-top: 1rem;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(238, 90, 36, 0.6);
+    background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+/* Result Display Styles */
+.result {
+    background: rgba(46, 204, 113, 0.2);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2ecc71;
+    border: 2px solid rgba(46, 204, 113, 0.4);
+    margin: 1rem 0;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Error Display Styles */
+.error {
+    background: rgba(231, 76, 60, 0.2);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e74c3c;
+    border: 2px solid rgba(231, 76, 60, 0.4);
+    margin: 1rem 0;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    form {
+        padding: 2rem;
+        min-width: 300px;
+    }
+    
+    input[type="number"], select, button {
+        font-size: 1rem;
+    }
+}

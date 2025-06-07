@@ -1,0 +1,56 @@
+/* CSS Reset - Normalize browser defaults */
+
+/* Remove default margin and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove default styling from lists */
+ul, ol {
+    list-style: none;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove default button styling */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Remove default input styling */
+input, select, textarea {
+    border: none;
+    outline: none;
+}
+
+/* Set consistent font family */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+/* Remove default link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset form elements */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset table styling */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
