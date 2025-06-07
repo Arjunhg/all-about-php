@@ -9,7 +9,7 @@
     
     <h3>Sign-Up</h3>
 
-    <form action="includes/formaHandler.inc.php" method="post">
+    <form action="includes/formHandler.inc.php" method="post">
         <input type="text" name="username" placeholder="Username" required />
         <input type="password" name="pwd" placeholder="Password" required />
         <input type="email" name="email" placeholder="Email" required />
