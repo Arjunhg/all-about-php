@@ -50,7 +50,7 @@ If you're working with database examples, make sure to:
 
 1. Configure your MySQL credentials in the appropriate files
 2. Import any required database schemas
-3. Check the `ChangeDbPassword.txt` file for database configuration details
+3. Ensure you have the necessary tables in database.
 
 ## 🔧 Troubleshooting
 
@@ -67,17 +67,6 @@ Feel free to contribute to this project by:
 2. Creating a new branch
 3. Making your changes
 4. Submitting a pull request
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
-
-## 📞 Support
-
-If you encounter any issues or have questions, please:
-1. Check the relevant section's documentation
-2. Review the troubleshooting guide
-3. Open an issue in the repository
 
 ---
 
